@@ -658,7 +658,7 @@ class Users extends Model
         }
 
         $config = [];
-        $userConfiguration = $this->getConfigs(['hydration' => \Phalcon\Mvc\Model\Resultset::HYDRATE_ARRAYS]);
+        // $userConfiguration = $this->getConfigs(['hydration' => \Phalcon\Mvc\Model\Resultset::HYDRATE_ARRAYS]);
 
         foreach ($userConfiguration as $value) {
             $config[$value['name']] = $value['value'];
