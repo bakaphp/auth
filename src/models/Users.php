@@ -875,4 +875,14 @@ class Users extends Model
             throw new Exception(current($this->getMessages()));
         }
     }
+
+    /**
+     * getNotificationKey function
+     *
+     * @return string
+     */
+    public function getNotificationKey(): string
+    {
+        return 'user_notifications_'.$this->getId();
+    }
 }
